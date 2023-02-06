@@ -1,0 +1,33 @@
+{
+  "name": "soc-blog-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "cross-env NODE_ENV=production node index.js",
+    "client": "yarn --cwd ./client start",
+    "dev": "cross-env NODE_ENV=development concurrently \"yarn server\" \"yarn client\""
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^7.6.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.2",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.8",
+    "uuid": "^9.0.0"
+  }
+}
